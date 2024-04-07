@@ -2,36 +2,56 @@ import React from "react";
 import image1 from "../assets/cart.png";
 import image2 from "../assets/hamburger.png";
 import image3 from "../assets/user.png";
-import { NavContainer } from "./navstyle";
+import icon1 from "../assets/more-icon.png";
+import {
+  LogoMain,
+  NavContainer,
+  NavIcons,
+  NavTextBtn,
+  NavTextWrapper,
+  Orangenotfication,
+} from "./navstyle";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <>
       <NavContainer>
-        <div class="logo">
+        <LogoMain>
           <div class="hamburger-one">
             <img src={image2} alt="image2" />
           </div>
           <h1>Camper</h1>
-        </div>
-        <div class="nav-text">
-          <div class="nav-text-btn">
-            <p>Motor</p>
-          </div>
-          <div class="nav-text-btn">
-            <p>Caravan</p>
-          </div>
-          <div class="nav-text-btn">
+        </LogoMain>
+        <NavTextWrapper>
+          <NavTextBtn>
+            <NavLink to="/">
+              <p>Motor</p>
+            </NavLink>
+            <img src={icon1} alt="icon1" />
+          </NavTextBtn>
+          <NavTextBtn>
+            <NavLink to="/caravan">
+              <p>Caravan</p>
+            </NavLink>
+            <img src={icon1} alt="icon1" />
+          </NavTextBtn>
+          <NavTextBtn>
             <p>Tuning</p>
-          </div>
-          <div class="nav-text-btn">
+            <img src={icon1} alt="icon1" />
+          </NavTextBtn>
+          <NavTextBtn>
             <p>Used Car</p>
-          </div>
+            <img src={icon1} alt="icon1" />
+          </NavTextBtn>
           <p>Camping Place</p>
-        </div>
-        <div class="nav-icons">
+        </NavTextWrapper>
+        <NavIcons>
           <div class="cart">
             <img src={image1} alt="image1" />
+            <Orangenotfication>
+              <p>1</p>
+            </Orangenotfication>
           </div>
           <div class="hamburger-two">
             <img src={image2} alt="image2" />
@@ -39,10 +59,11 @@ const Navbar = () => {
           <div class="user">
             <img src={image3} alt="image3" />
           </div>
-          <div class="nav-text-btn">
+          <NavTextBtn>
             <p>En</p>
-          </div>
-        </div>
+            <img src={icon1} alt="icon1" />
+          </NavTextBtn>
+        </NavIcons>
       </NavContainer>
     </>
   );

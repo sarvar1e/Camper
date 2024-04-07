@@ -18,67 +18,57 @@ code {
   padding: 0;
 }
 
-.logo {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  /* justify-content: center; */
-}
 .hamburger-one {
   display: none;
 }
 .hamburger-two {
   display: none;
 }
-.logo h1 {
-  color: var(--blue, #006dab);
-  font-family: Montserrat;
-  font-size: 38px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  cursor: pointer;
-}
-.nav-text {
-  flex: 3;
-  display: flex;
-  justify-content: space-evenly;
-  cursor: pointer;
-}
-.nav-text p {
-  color: var(--text, #373737);
-  font-family: Montserrat;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-}
-.nav-text-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.nav-icons {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: end;
-}
+
+/* Navbar icon code */
 .cart {
   display: flex;
 }
+/* Navbar icon code */
 .user {
-  margin-left: 15px;
+  margin: 0 -30px 0 -20px;
 }
-.circle {
-  margin: -6px 0px 20px -8px;
-  width: 14px;
-  height: 13.263px;
-  flex-shrink: 0;
-  background-color: #ff7a00;
-  border-radius: 50%;
-  color: white;
+
+/* Home body location input codes */
+
+.locationinput {
   display: flex;
   align-items: center;
-  justify-content: center;
+  margin-top: 30px;
+}
+.from {
+  margin-right: 20px;
+}
+.from p {
+  color: var(--text, #373737);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+}
+.frominput {
+  width: 91px;
+  height: 36px;
+  border-radius: 10px;
+  border: 1px solid rgba(55, 55, 55, 0.6);
+  cursor: pointer;
+}
+
+.to {
+  margin-top: -5px;
+}
+
+.comparebox p {
+  color: var(--blue, #006dab);
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
