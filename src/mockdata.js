@@ -1,4 +1,4 @@
-import img from "../src/assets/caravan1.png";
+import img from "../src/Components/assets/caravan1.png";
 
 export const campcar = {
   maindata: [

@@ -64,11 +64,32 @@ code {
   margin-top: -5px;
 }
 
-.comparebox p {
+.comparewrapper p {
+  margin-top: 50px;
   color: var(--blue, #006dab);
   font-family: "Open Sans";
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+}
+
+.comparephotos {
+  display: flex;
+  gap: 7px;
+}
+
+.comparebox {
+  margin-top: 5px;
+  width: 76px;
+  height: 90px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (max-width: 900px) {
+  .allcost {
+    display: none;
+  }
 }

@@ -21,17 +21,19 @@ const Navbar = () => {
           <div class="hamburger-one">
             <img src={image2} alt="image2" />
           </div>
-          <h1>Camper</h1>
+          <NavLink to="/" style={{ textDecoration: "none" }}>
+            <h1>Camper</h1>
+          </NavLink>
         </LogoMain>
         <NavTextWrapper>
           <NavTextBtn>
-            <NavLink to="/">
+            <NavLink to="/motor" style={{ textDecoration: "none" }}>
               <p>Motor</p>
             </NavLink>
             <img src={icon1} alt="icon1" />
           </NavTextBtn>
           <NavTextBtn>
-            <NavLink to="/caravan">
+            <NavLink to="/caravan" style={{ textDecoration: "none" }}>
               <p>Caravan</p>
             </NavLink>
             <img src={icon1} alt="icon1" />
