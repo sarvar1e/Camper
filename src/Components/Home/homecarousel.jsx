@@ -4,8 +4,8 @@ import Box from "@mui/material/Box";
 import MobileStepper from "@mui/material/MobileStepper";
 
 const images = [
-  "https://cdn.motor1.com/images/mgl/RqgR6m/s1/kia-bongo-camper.webp",
-  "https://www.cnet.com/a/img/resize/707501bab2d8e5df69fd5c97199cccaa43404125/hub/2022/04/22/8fe39662-dc2a-4d77-9afa-ef73462e2895/fe3d192c918c49a38377d564bfeff287.png?auto=webp&fit=crop&height=675&width=1200",
+  "https://as2.ftcdn.net/v2/jpg/06/63/73/09/1000_F_663730901_WipR8HFjEyVqO5URsrOQRiIRor3CpH3t.jpg",
+  "https://causewaycampers.com/wp-content/uploads/2021/01/F74-7521-HIGH-RES-CMYK-scaled.jpg",
   "https://media.ford.com/content/dam/fordmedia/Europe/en/2023/08/Next-Generation-Nugget/2023_FORD_Transit_Custom_Nugget_08.jpg",
 ];
 
@@ -23,23 +23,13 @@ function Carousel() {
     return () => clearInterval(intervalId);
   }, [maxSteps]);
 
-  const handleNext = () => {
-    setActiveStep((prevActiveStep) => (prevActiveStep + 1) % maxSteps);
-  };
-
-  const handleBack = () => {
-    setActiveStep((prevActiveStep) =>
-      prevActiveStep === 0 ? maxSteps - 1 : prevActiveStep - 1
-    );
-  };
-
   return (
     <Box
       sx={{
         position: "relative",
         width: "100%",
-        height: "550px", // Adjust height as needed
-        overflow: "hidden", // Hide overflow to prevent MobileStepper from extending beyond the container
+        height: "550px",
+        overflow: "hidden",
       }}
     >
       <Box
@@ -49,7 +39,8 @@ function Carousel() {
           backgroundImage: `url(${images[activeStep]})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
-          position: "absolute",
+          position: "relative",
+
           top: 0,
           left: 0,
         }}

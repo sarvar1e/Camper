@@ -11,17 +11,17 @@ import {
   ProductItems,
   ProductsBox,
   Productwrapper,
-} from "./homestyle";
-import { campcar } from "../../mockdata";
+} from "./motorstyle";
+import { campcar } from "../mock/mockdata";
 import image1 from "../assets/compare1.png";
 import image2 from "../assets/compare2.png";
 import image3 from "../assets/compare3.png";
 import icon1 from "../assets/more-icon.png";
 import icon2 from "../assets/clarity_grid-view-solid.jpg";
 import icon3 from "../assets/ic_round-view-list.png";
-import HomeBoxes from "./homeboxes";
+import GridMenu from "./gridbox";
 
-function HomeContainer() {
+function MotorConytainer() {
   const data = campcar.maindata;
   return (
     <>
@@ -32,7 +32,7 @@ function HomeContainer() {
       </HomeBg>
 
       <HomeBodyWrapper>
-        <CostWrapper>
+        {/* <CostWrapper>
           <div className="allcost">
             <h5>Cost of car</h5>
 
@@ -141,18 +141,18 @@ function HomeContainer() {
               <p>Compare</p>
               <div className="comparephotos">
                 <div className="comparebox">
-                  {/* <img src={image1} alt="image1" /> */}
+                  
                 </div>
                 <div className="comparebox">
-                  {/* <img src={image2} alt="image2" /> */}
+                  
                 </div>
                 <div className="comparebox">
-                  {/* <img src={image3} alt="image3" /> */}
+                  
                 </div>
               </div>
             </div>
           </div>
-        </CostWrapper>
+        </CostWrapper> */}
         <ItemWrapper>
           <ItemNavContainer>
             <div className="ItemNavContainerLeft">
@@ -191,30 +191,11 @@ function HomeContainer() {
             </div>
           </ItemNavContainer>
 
-          <ItemContainer>
-            <BoxContainer></BoxContainer>
-            <BoxContainer></BoxContainer>
-            <BoxContainer></BoxContainer>
-            <BoxContainer></BoxContainer>
-            <BoxContainer></BoxContainer>
-            <BoxContainer></BoxContainer>
-            <BoxContainer></BoxContainer>
-            <BoxContainer></BoxContainer>
-            <BoxContainer></BoxContainer>
-            <BoxContainer></BoxContainer>
-            <BoxContainer></BoxContainer>
-            <BoxContainer></BoxContainer>
-            <BoxContainer></BoxContainer>
-            <BoxContainer></BoxContainer>
-            <BoxContainer></BoxContainer>
-            <BoxContainer></BoxContainer>
-            <BoxContainer></BoxContainer>
-            <BoxContainer></BoxContainer>
-          </ItemContainer>
+          <GridMenu />
         </ItemWrapper>
       </HomeBodyWrapper>
     </>
   );
 }
 
-export default HomeContainer;
+export default MotorConytainer;

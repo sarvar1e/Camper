@@ -12,10 +12,8 @@ import MultiCarousel from "../multicarousel/multicarousel";
 import {
   BlogsContainer,
   BlogsLeft,
-  BlogsLeftP,
   BlogsRight,
   Homecontainer,
-  VideosContainer,
 } from "./homemainstyle";
 import PopUp from "./popupvideo/popup";
 

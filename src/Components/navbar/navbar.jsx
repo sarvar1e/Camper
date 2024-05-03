@@ -46,7 +46,9 @@ const Navbar = () => {
             <p>Used Car</p>
             <img src={icon1} alt="icon1" />
           </NavTextBtn>
-          <p>Camping Place</p>
+          <NavLink to="/campingplace" style={{ textDecoration: "none" }}>
+            <p>Camping Place</p>
+          </NavLink>
         </NavTextWrapper>
         <NavIcons>
           <div class="cart">

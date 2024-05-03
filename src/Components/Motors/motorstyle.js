@@ -47,7 +47,10 @@ export const HomeBodyWrapper = styled.div`
 
 export const CostWrapper = styled.div`
   flex: 1;
-  padding: 50px;
+
+  @media only screen and (max-width: 1300px) {
+    display: none;
+  }
 
   h5 {
     color: var(--text, #373737);
@@ -129,6 +132,12 @@ export const Costbtn = styled.div`
 export const ItemWrapper = styled.div`
   flex: 5;
   margin-top: 50px;
+  @media only screen and (max-width: 1300px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 
 export const ItemNavContainer = styled.div`
@@ -321,4 +330,115 @@ export const FooterBox = styled.h2`
   font-weight: 600;
   line-height: normal;
   margin-bottom: 40px;
+`;
+
+export const CardButtonWrapper = styled.div`
+  display: flex;
+  gap: 20px;
+`;
+
+export const Price = styled.p`
+  color: #006dab;
+  font-size: 20px;
+  font-weight: 700;
+  @media only screen and (max-width: 500px) {
+    font-size: ${(props) => (props.$price ? "13px" : "")};
+  }
+`;
+
+export const CarContainer = styled.div`
+  margin: 40px 30px 0 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 40px;
+  .car-box {
+    width: 90%;
+  }
+  @media only screen and (max-width: 1300px) {
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    margin: 30px;
+    .car-box {
+      width: 100%;
+      border-radius: 20px;
+    }
+  }
+  @media only screen and (max-width: 660px) {
+    grid-template-columns: repeat(1, 1fr);
+    display: grid;
+    margin: 30px auto;
+    .car-box {
+      width: 100%;
+      border-radius: 20px;
+    }
+  }
+`;
+
+export const Card = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  padding: 10px 30px;
+  border-radius: 20px;
+  width: 100%;
+  @media only screen and (max-width: 420px) {
+    width: 80%;
+    margin: auto;
+  }
+`;
+export const CardBottom = styled.div`
+  flex: 1;
+`;
+
+export const CardImg = styled.div`
+  flex: 1;
+  display: flex;
+  align-items: center;
+  img {
+    max-width: 600px;
+    /* min-height: 100px;
+        max-height: 100px; */
+  }
+`;
+
+export const CardBottomCarName = styled.p`
+  font-size: 19px;
+  font-weight: 600;
+  margin-bottom: 5px;
+`;
+
+export const CardBottomMiddle = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+  p {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  div {
+    display: flex;
+    align-items: center;
+    height: 20px;
+  }
+`;
+
+export const MappingButton = styled.button`
+  background: none;
+  border: 1px solid var(--blue, #006dab);
+  border-radius: 10px;
+  color: #006dab;
+  font-size: 14px;
+  width: 90px;
+  margin-top: 20px;
+  height: 30px;
+  font-weight: 700;
+  cursor: pointer;
+  &:hover {
+    background-color: #006dab;
+    color: white;
+  }
 `;

@@ -60,9 +60,10 @@
   margin: 0 1rem;
   display: flex;
 }
+
 .slick-prev,
 .slick-next {
-  border-radius: 40px;
+  border-radius: 20px;
   color: #006dab;
   background: #006dab;
 }

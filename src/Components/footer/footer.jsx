@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import footerImg1 from "../assets/footer1.png";
 import footerImg2 from "../assets/footer2.png";
 import footerImg3 from "../assets/footer3.png";
-import { FooterBox, FooterContainer } from "../Motors/homestyle";
+import { FooterBox, FooterContainer } from "../Motors/motorstyle";
 
 function Footer() {
   return (

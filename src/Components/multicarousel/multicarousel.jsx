@@ -20,10 +20,10 @@ const MultiCarousel = () => {
     initialSlide: 0,
     responsive: [
       {
-        breakpoint: 1200,
+        breakpoint: 1300,
         settings: {
-          slidesToShow: 4,
-          slidesToScroll: 4,
+          slidesToShow: 3,
+          slidesToScroll: 2,
           infinite: true,
           dots: true,
         },
@@ -45,7 +45,7 @@ const MultiCarousel = () => {
         },
       },
       {
-        breakpoint: 420,
+        breakpoint: 660,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
