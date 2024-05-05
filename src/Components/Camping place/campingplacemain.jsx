@@ -17,18 +17,16 @@ const CampingPlace = () => {
 
       <Reveal>
         <PlaceOptions>
-          <Link to="/location">
+          <Link to="/location" style={{ textDecoration: "none" }}>
             <PlaceOffers>
               <img src={placeone} alt="place" />
               <div>
                 <p>Camping place name</p>
-                <Link to="/location" style={{ textDecoration: "none" }}>
-                  Location
-                </Link>
+                <Link to="/location">Location</Link>
               </div>
             </PlaceOffers>
           </Link>
-          <Link to="/location">
+          <Link to="/location" style={{ textDecoration: "none" }}>
             <PlaceOffers>
               <img src={placetwo} alt="place" />
               <div>
@@ -37,7 +35,7 @@ const CampingPlace = () => {
               </div>
             </PlaceOffers>
           </Link>
-          <Link to="/location">
+          <Link to="/location" style={{ textDecoration: "none" }}>
             <PlaceOffers>
               <img src={placethree} alt="place" />
               <div>
@@ -46,7 +44,7 @@ const CampingPlace = () => {
               </div>
             </PlaceOffers>
           </Link>
-          <Link to="/location">
+          <Link to="/location" style={{ textDecoration: "none" }}>
             <PlaceOffers>
               <img src={placetwo} alt="place" />
               <div>
@@ -55,7 +53,7 @@ const CampingPlace = () => {
               </div>
             </PlaceOffers>
           </Link>
-          <Link to="/location">
+          <Link to="/location" style={{ textDecoration: "none" }}>
             <PlaceOffers>
               <img src={placeone} alt="place" />
               <div>
@@ -64,7 +62,7 @@ const CampingPlace = () => {
               </div>
             </PlaceOffers>
           </Link>
-          <Link to="/location">
+          <Link to="/location" style={{ textDecoration: "none" }}>
             <PlaceOffers>
               <img src={placethree} alt="place" />
               <div>
@@ -74,7 +72,7 @@ const CampingPlace = () => {
             </PlaceOffers>
           </Link>
 
-          <Link to="/location">
+          <Link to="/location" style={{ textDecoration: "none" }}>
             <PlaceOffers>
               <img src={placeone} alt="place" />
               <div>
@@ -83,7 +81,7 @@ const CampingPlace = () => {
               </div>
             </PlaceOffers>
           </Link>
-          <Link to="/location">
+          <Link to="/location" style={{ textDecoration: "none" }}>
             <PlaceOffers>
               <img src={placethree} alt="place" />
               <div>
@@ -92,7 +90,7 @@ const CampingPlace = () => {
               </div>
             </PlaceOffers>
           </Link>
-          <Link to="/location">
+          <Link to="/location" style={{ textDecoration: "none" }}>
             <PlaceOffers>
               <img src={placetwo} alt="place" />
               <div>
@@ -101,7 +99,7 @@ const CampingPlace = () => {
               </div>
             </PlaceOffers>
           </Link>
-          <Link to="/location">
+          <Link to="/location" style={{ textDecoration: "none" }}>
             <PlaceOffers>
               <img src={placeone} alt="place" />
               <div>
@@ -110,7 +108,7 @@ const CampingPlace = () => {
               </div>
             </PlaceOffers>
           </Link>
-          <Link to="/location">
+          <Link to="/location" style={{ textDecoration: "none" }}>
             <PlaceOffers>
               <img src={placetwo} alt="place" />
               <div>
@@ -119,7 +117,7 @@ const CampingPlace = () => {
               </div>
             </PlaceOffers>
           </Link>
-          <Link to="/location">
+          <Link to="/location" style={{ textDecoration: "none" }}>
             <PlaceOffers>
               <img src={placethree} alt="place" />
               <div>

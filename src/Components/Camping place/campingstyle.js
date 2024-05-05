@@ -50,6 +50,28 @@ export const LocationWrapper = styled.div`
   border-radius: 20px;
 `;
 
+export const PlaceOptions = styled.div`
+  display: grid;
+  grid-template-columns: auto auto auto;
+  /* justify-content: space-evenly; */
+  gap: 20px;
+
+  width: 100%;
+  height: fit-content;
+  margin: 80px 30px 0 30px;
+
+  @media (max-width: 1024px) {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+  }
+  @media (max-width: 430px) {
+    display: grid;
+    grid-template-columns: auto;
+    width: 100%;
+  }
+`;
+
 export const PlaceOffers = styled.div`
   display: flex;
   flex-direction: column;
@@ -58,7 +80,7 @@ export const PlaceOffers = styled.div`
   border-radius: 10px;
   padding-top: 20px;
   padding-bottom: 30px;
-  margin-top: 60px;
+
   p {
     padding-top: 20px;
     color: var(--text, #373737);
@@ -83,25 +105,6 @@ export const PlaceOffers = styled.div`
     text-decoration-line: underline;
   }
   img {
-    width: 100%;
-  }
-`;
-export const PlaceOptions = styled.div`
-  display: grid;
-  grid-template-columns: auto auto auto;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 100%;
-  height: fit-content;
-  gap: 30px;
-  @media (max-width: 1024px) {
-    display: grid;
-    grid-template-columns: auto auto;
-    width: 100%;
-  }
-  @media (max-width: 430px) {
-    display: grid;
-    grid-template-columns: auto;
     width: 100%;
   }
 `;

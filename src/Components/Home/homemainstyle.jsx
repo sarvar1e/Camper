@@ -24,8 +24,8 @@ export const VideosContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
-  justify-content: center;
-  margin: auto;
+  /* justify-content: center;
+  margin: auto; */
 
   @media only screen and (max-width: 1300px) {
     grid-template-columns: repeat(2, 1fr);
