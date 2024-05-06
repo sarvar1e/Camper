@@ -14,8 +14,10 @@ import {
   BlogsLeft,
   BlogsRight,
   Homecontainer,
+  VideosContainer,
 } from "./homemainstyle";
-import PopUp from "./popupvideo/popup";
+
+import NestedModal from "../Caravan/modal";
 
 const HomeMain = () => {
   return (
@@ -26,7 +28,9 @@ const HomeMain = () => {
         <MultiCarousel />
 
         <h2>Video</h2>
-        <PopUp />
+        <VideosContainer>
+          <NestedModal />
+        </VideosContainer>
         <h2>Blogs</h2>
         <BlogsContainer>
           <BlogsLeft>

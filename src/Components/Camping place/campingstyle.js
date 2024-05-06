@@ -51,25 +51,15 @@ export const LocationWrapper = styled.div`
 `;
 
 export const PlaceOptions = styled.div`
-  display: grid;
-  grid-template-columns: auto auto auto;
-  /* justify-content: space-evenly; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
-
   width: 100%;
   height: fit-content;
-  margin: 80px 30px 0 30px;
-
-  @media (max-width: 1024px) {
-    display: grid;
-    grid-template-columns: auto auto;
-    width: 100%;
-  }
-  @media (max-width: 430px) {
-    display: grid;
-    grid-template-columns: auto;
-    width: 100%;
-  }
+  padding-top: 80px;
 `;
 
 export const PlaceOffers = styled.div`

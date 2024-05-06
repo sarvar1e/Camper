@@ -2,12 +2,7 @@ import React from "react";
 import NestedModal from "./modal";
 
 const CaravanComponent = () => {
-  return (
-    <div>
-      CaravanComponent
-      <NestedModal></NestedModal>;
-    </div>
-  );
+  return <div>CaravanComponent</div>;
 };
 
 export default CaravanComponent;

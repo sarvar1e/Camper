@@ -1,6 +1,5 @@
 import React from "react";
 import { CampingPlacebg, PlaceOffers, PlaceOptions } from "./campingstyle";
-import CampingPlaceBody from "./campingplacebody";
 import placeone from "../assets/image 11.png";
 import placetwo from "../assets/image 12.png";
 import placethree from "../assets/image 13.png";

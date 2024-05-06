@@ -32,7 +32,7 @@ function MotorConytainer() {
       </HomeBg>
 
       <HomeBodyWrapper>
-        {/* <CostWrapper>
+        <CostWrapper>
           <div className="allcost">
             <h5>Cost of car</h5>
 
@@ -140,19 +140,13 @@ function MotorConytainer() {
             <div className="comparewrapper">
               <p>Compare</p>
               <div className="comparephotos">
-                <div className="comparebox">
-                  
-                </div>
-                <div className="comparebox">
-                  
-                </div>
-                <div className="comparebox">
-                  
-                </div>
+                <div className="comparebox"></div>
+                <div className="comparebox"></div>
+                <div className="comparebox"></div>
               </div>
             </div>
           </div>
-        </CostWrapper> */}
+        </CostWrapper>
         <ItemWrapper>
           <ItemNavContainer>
             <div className="ItemNavContainerLeft">

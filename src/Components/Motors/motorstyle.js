@@ -41,12 +41,16 @@ export const HomeBg = styled.div`
 
 export const HomeBodyWrapper = styled.div`
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  align-items: start;
   justify-content: center;
+
+  width: 100%;
 `;
 
 export const CostWrapper = styled.div`
   flex: 1;
+  padding: 55px;
 
   @media only screen and (max-width: 1300px) {
     display: none;
@@ -131,7 +135,7 @@ export const Costbtn = styled.div`
 
 export const ItemWrapper = styled.div`
   flex: 5;
-  margin-top: 50px;
+  padding-top: 55px;
   @media only screen and (max-width: 1300px) {
     display: flex;
     flex-direction: column;
@@ -355,6 +359,16 @@ export const CarContainer = styled.div`
   .car-box {
     width: 90%;
   }
+  @media only screen and (max-width: 1300px) {
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    margin: 30px;
+    .car-box {
+      width: 100%;
+      border-radius: 20px;
+    }
+  }
+
   @media only screen and (max-width: 1300px) {
     grid-template-columns: repeat(3, 1fr);
     display: grid;
